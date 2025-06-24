@@ -33,6 +33,7 @@ function FileUpload() {
   return (
     <div style={{ padding: "2rem" }}>
       <h2>Upload an Image to Get Translations & Audio</h2>
+      <h4>An AI-powered MERN app that lets users upload an image and receive translated text with audio in five different languages using AWS Textract, Translate, and Polly </h4>
 
       <input
         type="file"
