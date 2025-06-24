@@ -36,6 +36,19 @@ This setup ensures that the app remains secure, scalable, and production-ready.
 
 ---
 
+### Visual Steps
+
+#### Step 1: Input Image  
+![step1](assets/aws_ai.png)
+
+#### Step 2: Upload Image  
+![step2](assets/pic1.png)
+
+#### Step 2: AWS Services Response on Frontend  
+![step3](assets/pic2.png)
+
+---
+
 ### 🧾 Author
 
 Built with ❤️ by [@sanchit0496](https://github.com/sanchit0496)
