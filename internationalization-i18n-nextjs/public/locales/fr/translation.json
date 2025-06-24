@@ -1,0 +1,7 @@
+{
+    "greeting": "Hola",
+    "description":{
+      "line1": "fr",
+      "line2": "desc <1>{{test}}</1>"
+    } 
+}
