@@ -25,6 +25,25 @@ All AWS operations are handled securely on the backend. The frontend never direc
 
 ---
 
+### Key Folders and Files
+
+All AWS operations are handled securely on the backend. The frontend never directly interacts with AWS services or credentials.
+
+
+| Folder/File | Description |
+|-------------|-------------|
+| `routes/` | Contains route definitions for image upload and processing |
+| `uploads/` | Temporarily stores images uploaded from the frontend (`multer` handles this) |
+| `public/audio/` | Stores the generated `.mp3` files from AWS Polly (served as static files) |
+| `utils/` | Contains core AWS logic broken into utilities: |
+| ├── `extractTextFromImage.js` | Invokes **AWS Textract** to extract text from images |
+| ├── `translateText.js` | Uses **AWS Translate** to convert text into multiple languages |
+| └── `synthesizeSpeech.js` | Generates `.mp3` audio using **AWS Polly** |
+| `models/` | (Optional) Placeholder for DB models or future data structures |
+| `logs/` | Can be used to store request/error logs for debugging or monitoring |
+
+---
+
 ### Deployment Strategy
 
 - The **frontend** (React + Vite) can be deployed to platforms like **Vercel** or **Netlify**.
